@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ProductsKart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
+</head>
+
+<body>
+    <header class="page-sidebar">
+        <nav>
+            <div class="nav-logo">
+                <div class="logo"></div>
+                <div class="company-date">
+                    <h4>ProductsKart</h4>
+                    <h6>Thu 26 Jun</h6>
+                </div>
+                <button class="collapser" title="Toggle Collapse"></button>
+            </div>
+            <div class="nav-image">
+                <img src="./images/food.png" alt="burger" width="50px">
+                <div class="nav-image-title">
+                    <h6>Menu</h6>
+                    <h3>Burger</h3>
+                </div>
+                <div class="sidebar-filter">
+                    <div data-icon="ei-archive" data-size="s"></div>
+                    <span>Filter</span>
+                </div>
+            </div>
+            <ul class="side-menu">
+                <li class="menu-heading">
+                    <h3>Menu Dashboard</h3>
+                    <h1>...</h1>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-navicon"></div>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-chart"></div>
+                        <span>Menus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-redo"></div>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-credit-card"></div>
+                        <span>Wallet</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-envelope"></div>
+                        <span>Promotion</span>
+                    </a>
+                </li>
+                <li class="menu-heading">
+                    <h3>General</h3>
+                    <h1>...</h1>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-gear"></div>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <div data-icon="ei-star"></div>
+                        <span>Give Rating</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="switch-mode">
+                <button class="light-mode-btn">Light</button>
+                <button class="dark-mode-btn">Dark</button>
+            </div>
+        </nav>
+    </header>
+    <section class="page-content">
+        <section class="top-bar">
+            <div class="search-icon" data-icon="ei-search"></div>
+            <div class="search-input">
+                <input type="search" placeholder="Search Menu...">
+            </div>
+            <div class="top-bar-right">
+                <div class="chat">
+                    <div data-icon="ei-comment"></div>
+                    <span>Chat</span>
+                </div>
+                <div class="more">
+                    <div data-icon="ei-plus"></div>
+                    <span>More</span>
+                </div>
+                <div class="share-btn">
+                    <div data-icon="ei-share-google"></div>
+                    <span>Share</span>
+                </div>
+                <div class="notes-btn">
+                    <div data-icon="ei-pencil"></div>
+                    <span>Your notes</span>
+                </div>
+            </div>
+        </section>
+        <section class="order-modal fadeIn">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span class="modal-main-title">My Order</span>
+                    <span class="modal-sub-title">Take Out</span>
+                </div>
+                <div class="circle-close"></div>
+            </div>
+            <div class="modal-body">
+                <div class="order-cards"></div>
+                <div class="sub-total">
+                    <span>Subtotal</span>
+                    <span class="cal-subtotal">$0</span>
+                </div>
+                <div class="tax">
+                    <span>Tax(10%)</span>
+                    <span class="cal-tax">$0</span>
+                </div>
+                <hr />
+                <div class="total">
+                    <span>Total</span>
+                    <span class="cal-total">$0</span>
+                </div>
+                <button class="print-btn" onclick="printBill()">Print Bills</button>
+            </div>
+        </section>
+        <section class="menu-header">
+            <div class="back-button">
+                <img src="./images/left.png" alt="left-arrow" width="30px">
+            </div>
+            <div class="top-section-title">
+                <p class="main-title">Hamburger</p>
+                <p class="sub-title">Discover whatever you need easily</p>
+            </div>
+            <div>
+                <ul class="breadcrumb">
+                    <li>MENUS</li>
+                    <li>FOOD</li>
+                    <li>HAMBURGER</li>
+                </ul>
+            </div>
+            <button class="order-btn">Show My Order</button>
+        </section>
+        <section class="grid">
+        </section>
+        <footer class="page-footer">
+        </footer>
+    </section>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
